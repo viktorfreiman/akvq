@@ -16,7 +16,7 @@ https://docs.galaxyproject.org/en/release_20.05/admin/config_logging.html
 https://docs.python.org/3/library/logging.html#logrecord-attributes
 """
 
-from settings import LOGGING
+from .settings import LOGGING
 
 logging.getLogger(__name__).addHandler(logging.NullHandler())
 
@@ -33,7 +33,3 @@ def getLevelName(log_level):
     """Wapper for logging.getLevelName
     for skipping to import logging"""
     return logging.getLevelName(log_level)
-
-
-class UTCFormatter(logging.Formatter):
-    converter = logging.time.gmtime

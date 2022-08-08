@@ -1,10 +1,8 @@
-import logging
 import os
-import sys
 from pathlib import Path
 
 from azure.core.exceptions import ClientAuthenticationError
-from azure.identity import DefaultAzureCredential, TokenCachePersistenceOptions
+from azure.identity import DefaultAzureCredential
 from azure.keyvault.secrets import SecretClient
 
 
@@ -59,7 +57,7 @@ def main():
     # # Critical is to hide the error from azure
     # azure_identity_logger.setLevel(logging.CRITICAL)
 
-    import logger
+    from . import logger
     log = logger.config("akvq")
 
     try:
