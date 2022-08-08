@@ -1,10 +1,7 @@
-Welcome to |project|'s documentation!
+Welcome to akvq's documentation!
 =======================================
 
-A complete kickstart devcontainer repository for python3 for more info check :ref:`development`.
-
-`What is a devcontainer? <https://code.visualstudio.com/docs/remote/containers>`_
-
+Get secrets from azure key vaults quick and easy
 
 .. toctree::
     :maxdepth: 2

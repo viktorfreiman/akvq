@@ -22,7 +22,7 @@ repo_name = Path(
     .strip()
 ).stem
 
-source_path = project_path / repo_name
+source_path = project_path / "src"
 
 # Add path for sphinx to find
 sys.path.extend([str(docs_path), str(project_path), str(source_path)])
@@ -104,6 +104,14 @@ autodoc_default_options = {
 intersphinx_mapping = {
     "py3": ("https://docs.python.org/3/", None),
     "sphinx": ("https://www.sphinx-doc.org/en/master/", None),
+    "azure-identity": (
+        "https://azuresdkdocs.blob.core.windows.net/$web/python/azure-identity/latest/",
+        None,
+    ),
+    "azure-keyvault-secrets": (
+        "https://azuresdkdocs.blob.core.windows.net/$web/python/azure-keyvault-secrets/latest/",
+        None,
+    ),
 }
 
 # Add any paths that contain templates here, relative to this directory.
