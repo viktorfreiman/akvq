@@ -5,6 +5,7 @@ from azure.core.exceptions import ClientAuthenticationError
 from azure.identity import DefaultAzureCredential
 from azure.keyvault.secrets import SecretClient
 
+from . import logger
 
 __doc__ = """
 
@@ -28,6 +29,13 @@ Uess the same as for ssh keys
 :doc:`azure.keyvault.secrets`
 
 :doc:`azure-keyvault-secrets:index`
+
+:class:`azure.mgmt.resource.subscriptions.SubscriptionClient`
+
+https://docs.microsoft.com/en-us/azure/governance/resource-graph/first-query-python#run-your-first-resource-graph-query
+
+https://stackoverflow.com/q/64654321
+
 """
 
 
@@ -40,6 +48,7 @@ def main():
         - add config list like poetry
         - env for vault_url
         - support to add to vault
+        - auto find vault based on tag
 
     :class:`azure.identity.DefaultAzureCredential`
 
@@ -57,7 +66,6 @@ def main():
     # # Critical is to hide the error from azure
     # azure_identity_logger.setLevel(logging.CRITICAL)
 
-    from . import logger
     log = logger.config("akvq")
 
     try:
@@ -96,6 +104,8 @@ def main():
 
     except ClientAuthenticationError:
         pass
+    except ValueError as e:
+        log.critical(e)
 
     # # specify a cache name to isolate the cache from other applications
     # TokenCachePersistenceOptions(name="akvq")

@@ -35,7 +35,7 @@ LOGGING = {
     "handlers": {"console": {"class": "logging.StreamHandler", "formatter": "utc"}},
     #
     # root is default logger
-    "root": {"handlers": ["console"], "level": WARNING},
+    "root": {"handlers": ["console"], "level": DEBUG},
     #
     "loggers": {
         #

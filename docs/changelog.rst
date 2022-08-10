@@ -2,6 +2,12 @@
 Changelog
 =========
 
+v0.0.3
+======
+
+- fix entrypoint
+- fix project structure
+
 v0.0.2
 ======
 

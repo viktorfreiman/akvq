@@ -25,7 +25,7 @@ def config(log_name):
     logging.config.dictConfig(LOGGING)
     log = logging.getLogger(log_name)
     self_log = logging.getLogger(__name__)
-    self_log.debug(f"Loading log config: {config}")
+    self_log.debug(f"Loading log config: {LOGGING}")
     return log
 
 

@@ -24,6 +24,7 @@ Setup
 6. Press :guilabel:`Reopen in Container`
 7. Now you will ready to start coding. You have all things you need installed. Check :ref:`development` for what is installed.
 
+Folder structure is from :ref:`entry_points`
 
 Docs
 ****

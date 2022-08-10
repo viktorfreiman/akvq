@@ -1,12 +1,15 @@
 [tool.poetry]
 name = "akvq"
-version = "0.0.2"
+version = "0.0.3"
 description = "Get secrets from azure key vaults quick and easy"
 authors = ["Viktor Freiman <freiman.viktor@gmail.com>"]
 license = "MIT"
+packages = [
+    { include = "akvq", from = "src" },
+]
 
 [tool.poetry.scripts]
-akvq = "src.akvq:main"
+akvq = "akvq.__main__:main"
 
 [tool.poetry.dependencies]
 python = "^3.6.2"

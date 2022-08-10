@@ -2,6 +2,6 @@
 API Reference
 =============
 
-.. automodule:: akvq
+.. automodule:: akvq.__main__
     :undoc-members:
     :members:
