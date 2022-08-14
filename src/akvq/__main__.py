@@ -49,6 +49,7 @@ def main():
         - env for vault_url
         - support to add to vault
         - auto find vault based on tag
+        - add support for windows
 
     :class:`azure.identity.DefaultAzureCredential`
 

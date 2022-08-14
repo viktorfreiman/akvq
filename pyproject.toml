@@ -7,6 +7,9 @@ license = "MIT"
 packages = [
     { include = "akvq", from = "src" },
 ]
+readme = "README.md"
+documentation = "https://akvq.readthedocs.io"
+repository = "https://github.com/viktorfreiman/akvq"
 
 [tool.poetry.scripts]
 akvq = "akvq.__main__:main"

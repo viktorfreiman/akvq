@@ -7,6 +7,7 @@ v0.0.3
 
 - fix entrypoint
 - fix project structure
+- add links to pyproject.toml
 
 v0.0.2
 ======
