@@ -35,17 +35,21 @@ LOGGING = {
     "handlers": {"console": {"class": "logging.StreamHandler", "formatter": "utc"}},
     #
     # root is default logger
-    "root": {"handlers": ["console"], "level": DEBUG},
+    "root": {"handlers": ["console"], "level": WARNING},
     #
     "loggers": {
         #
         # Define logger
         #
+        # Hide failed azure login
         "azure.identity": {
-            "level": WARNING,
+            "level": CRITICAL,
         },
+        # "azure.core": {
+        #     "level": CRITICAL,
+        # },
         "akvq": {
-            "level": DEBUG,
+            "level": INFO,
         },
     },
 }

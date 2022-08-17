@@ -113,10 +113,6 @@ intersphinx_mapping = {
         "https://azuresdkdocs.blob.core.windows.net/$web/python/azure-keyvault-secrets/latest/",
         None,
     ),
-    "azure-mgmt-resource": (
-        "https://azuresdkdocs.blob.core.windows.net/$web/python/azure-mgmt-resource/latest/",
-        None,
-    ),
 }
 
 # Add any paths that contain templates here, relative to this directory.

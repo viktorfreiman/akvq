@@ -2,6 +2,14 @@
 Changelog
 =========
 
+v0.0.4
+======
+
+- renames akv secret names from dash to underscore
+- working InteractiveBrowser and DeviceCode login
+- support for setting vault_uri in git config
+- better printout
+
 v0.0.3
 ======
 
