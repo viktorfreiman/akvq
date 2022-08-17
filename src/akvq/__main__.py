@@ -40,6 +40,8 @@ Uess the same as for ssh keys
 # start main logger to get all settings
 log = logger.config("akvq")
 
+__version__ = "0.0.5"
+
 
 def get_secrets() -> dict:
     """Get all AKVQ secrets from AKV, Expects secret_client"""
@@ -77,9 +79,8 @@ def main() -> int:
     """
     .. todo::
 
-        - save secrets to file
-        - clear file
-        - add config list like poetry
+        - delete file on logout
+        - add support for args, logout
         - support to add to vault
         - auto find vault based on tag
         - add support for windows
@@ -134,6 +135,7 @@ use the device code login."""
             akfile.write(f"export {real_secret_name}={secret_value}\n")
 
     print("You might need to restart your terminal to source the new ENV")
+    print(f"or run: source {akfilename}")
 
 
 if __name__ == "__main__":

@@ -2,6 +2,12 @@
 Changelog
 =========
 
+v0.0.5
+======
+
+- add __version__
+- better printout
+
 v0.0.4
 ======
 

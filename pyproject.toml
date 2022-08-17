@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "akvq"
-version = "0.0.4"
+version = "0.0.5"
 description = "Get secrets from azure key vaults quick and easy"
 authors = ["Viktor Freiman <freiman.viktor@gmail.com>"]
 license = "MIT"
