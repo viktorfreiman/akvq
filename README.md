@@ -1,6 +1,7 @@
 # AKVQ
 
 [![Documentation Status](https://readthedocs.org/projects/akvq/badge/?version=latest)](https://akvq.readthedocs.io/en/latest/?badge=latest)
+[![PyPI](https://img.shields.io/pypi/v/akvq)](https://pypi.org/project/akvq)
 
 Azure Key Vault Quick
 
